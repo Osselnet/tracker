@@ -52,7 +52,6 @@ public class Item {
         return created;
     }
 
-
     @Override
     public String toString() {
         return "Item{"
