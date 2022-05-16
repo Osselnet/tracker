@@ -13,12 +13,19 @@ public class Item {
 
     private String name;
 
+    private String description;
+
     private final LocalDateTime created = LocalDateTime.now();
 
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
 
     public Item(String name) {
         this.name = name;
+    }
+
+    public Item(String name, String description) {
+        this.name = name;
+        this.description = description;
     }
 
     public Item() {
@@ -44,6 +51,7 @@ public class Item {
     public LocalDateTime getCreated() {
         return created;
     }
+
 
     @Override
     public String toString() {
