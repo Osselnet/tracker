@@ -52,6 +52,10 @@ public class Item {
         return created;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     @Override
     public String toString() {
         return "Item{"
